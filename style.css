@@ -1,15 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
 :root {
   --grid-rows: 1;
   --grid-columns: 1;
 }
 
+body {
+  align-items: center;
+}
+
+#red-container {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 33px;
+  border-radius: 66px;
+  background-color: #c22828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font-family: 'Cabin Sketch', cursive, sans-serif;
+  font-size: 66px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+body {
+  margin: 0;
+  padding: 42px 0px 0px 0px;
+  background-color: #006080;
+}
 #container {
+  width: 600px;
+  height: 600px;
+  border: 3px solid black;
   display: grid;
   grid-template-columns: repeat(var(--grid-rows), 1fr);
   grid-template-rows: repeat(var(--grid-columns), 1fr);
 }
 
 .grid-item {
-  border: 1px solid lightslategray;
+  background-color: whitesmoke;
+  border: 1px dotted lightgray;
   text-align: center;
+  aspect-ratio: 1;
 }
