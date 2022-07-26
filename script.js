@@ -1,7 +1,10 @@
 const container = document.getElementById("container");
+const sizeValue = document.getElementById("size-value");
+const sizeSlider = document.getElementById("size-slider");
+
 let gridItems = Array.from(document.querySelectorAll('.grid-item'));
 
-function makeGrid(rows, columns) {
+function makeGrid(rows, columns, color) {
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-colums', columns);
   for (i = 0; i < (rows * columns); i++) {
@@ -13,12 +16,15 @@ function makeGrid(rows, columns) {
 
   gridItems.forEach((gridItem) =>
     gridItem.addEventListener('mouseover',
-      e => e.target.classList.add('black-background')
-    )
+      e => e.target.style.backgroundColor = color)
   )
 };
 
-makeGrid(64, 64);
+makeGrid(16, 16, 'black');
+
+sizeSlider.oninput = function() {
+  sizeValue.innerText = `${this.value} x ${this.value}`;
+};
 
 
 

@@ -9,9 +9,17 @@
     <div id="red-container">
       <div id="title">Etch-A-Sketch</div>
       <div id="container"></div>
-      <div id="controls">
-        <div id="left-controls"></div>
-        <div id="right-controls"></div>
+      <div class="controls">
+        <div class="left-controls">
+          <div id="size-value">16 x 16</div>
+          <input id="size-slider" type="range" value="16" min="16" max="64" />
+        </div>
+        <div class="right-controls">
+          <label for="black">Black</label>
+          <input id="black" type="radio" value="black" name="color" checked="checked">
+          <label for="chaos">Chaos</label>
+          <input id="chaos" type="radio" value="chaos" name="color">
+        </div>
       </div>
     </div>
 
