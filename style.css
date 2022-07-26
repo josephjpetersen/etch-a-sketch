@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --grid-rows: 1;
@@ -78,4 +78,17 @@ body {
   background-color: whitesmoke;
   padding: 14px 40px;
   border-radius: 66px;
+}
+
+.footer {
+  margin: 23px 0px 0px 0px;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+
+a {
+  color: whitesmoke;
 }
