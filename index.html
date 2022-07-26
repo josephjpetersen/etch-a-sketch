@@ -8,7 +8,9 @@
   <body>
     <div id="red-container">
       <div id="title">Etch-A-Sketch</div>
-      <div id="container"></div>
+      <div id="white-container">
+        <div id="container"></div>
+      </div>
       <div class="controls">
         <div class="left-controls">
           <div id="size-value">16 x 16</div>
@@ -16,13 +18,14 @@
         </div>
         <div class="right-controls">
           <label for="black">Black</label>
-          <input id="black" type="radio" value="black" name="color" checked="checked">
+          <input class="color-choice" id="black" type="radio" value="black" 
+            name="color" checked="checked">
           <label for="chaos">Chaos</label>
-          <input id="chaos" type="radio" value="chaos" name="color">
+          <input class="color-choice" id="chaos" type="radio" value="chaos" 
+            name="color">
         </div>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
